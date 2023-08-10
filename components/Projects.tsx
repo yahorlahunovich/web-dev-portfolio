@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <section className='h-screen bg-green-500'>Projects</section>
+    <section id='projects' className='h-screen bg-green-500'>Projects</section>
   )
 }
 
