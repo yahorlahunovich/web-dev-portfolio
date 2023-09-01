@@ -1,9 +1,18 @@
-import React from 'react'
+import { skillsIcons } from "@/public/assets/icons";
+import Image from "next/image";
+import React from "react";
 
 const Skills = () => {
   return (
-    <section id='skills' className='h-screen bg-yellow-500'>Skills</section>
-  )
-}
+    <section id="skills" className="h-screen bg-yellow-500">
+      Skills
+      <div className="flex flex-row">
+        {skillsIcons.map((icon) => (
+          <Image src={icon.src} key={icon.name} alt={icon.name} height={100} width={100} />
+        ))}
+      </div>
+    </section>
+  );
+};
 
-export default Skills
+export default Skills;
