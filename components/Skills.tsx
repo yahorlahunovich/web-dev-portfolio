@@ -4,11 +4,17 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section id="skills" className="h-screen bg-yellow-500">
+    <section id="skills" className="h-screen bg-yellow-500 snap-start">
       Skills
       <div className="flex flex-row">
         {skillsIcons.map((icon) => (
-          <Image src={icon.src} key={icon.name} alt={icon.name} height={100} width={100} />
+          <Image
+            src={icon.src}
+            key={icon.name}
+            alt={icon.name}
+            height={100}
+            width={100}
+          />
         ))}
       </div>
     </section>

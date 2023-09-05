@@ -17,6 +17,7 @@ export { default as reduxSvg } from "./redux.svg";
 export { default as nextSvg } from "./next.svg";
 export { default as gitSvg } from "./git.svg";
 export { default as tailwindSvg } from "./tailwind.svg";
+export { default as envelopeSvg} from './envelope.svg'
 
 export const skillsIcons: SkillsIconsType[] = [
   { name: "html icon", src: htmlSvg },

@@ -13,17 +13,17 @@ const Feed = ({ I_AM, name, setName }: FeedProps) => {
     }, I_AM[0].length * 1000);
   }, [name]);
   return (
-    <section id="home" className="h-screen bg-[#D0C3A3] p-36">
+    <section id="home" className="h-screen bg-[#D0C3A3] p-36 snap-start">
       <div>
         Hi, my name is
-        <span className="uppercase text-4xl">Egor Lagunovich</span>
+        <h1 className="uppercase text-4xl">Egor Lagunovich</h1>
       </div>
       <div
         className={`overflow-hidden whitespace-nowrap font-mono animate-typing `}
       >
         I am
         <ul>
-          <li className="border-r-4 border-r-black animate-blink">
+          <li className="border-r-4 inline-block border-r-black animate-blink">
             Front-End Developer
           </li>
           <li>Speedcuber</li>

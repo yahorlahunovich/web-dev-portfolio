@@ -17,7 +17,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <main> {children}</main>
+        <main className="snap-y snap-proximity overflow-y-scroll h-screen duration-300 scroll-smooth">
+          {" "}
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
