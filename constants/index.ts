@@ -1,3 +1,5 @@
+import { githubSvg, instagramSvg, linkedinSvg } from "@/public/assets/icons";
+
 export const I_AM = [
   "Front-End Developer",
   "Speedcuber",
@@ -6,3 +8,24 @@ export const I_AM = [
   "Sportsman",
   "Student",
 ];
+
+export const social_media_links = [
+  {
+    name: 'Github',
+    src: 'https://github.com/egorlagunovich',
+    iconSrc: githubSvg,
+  },
+  
+  {
+    name: 'Instagram',
+    src: 'https://www.instagram.com/egorlagunovich/',
+    iconSrc: instagramSvg,
+  },
+  
+  {
+    name: 'LinkedIn',
+    src: 'https://www.linkedin.com/in/egorlagunovich/',
+    iconSrc: linkedinSvg,
+  },
+  
+]

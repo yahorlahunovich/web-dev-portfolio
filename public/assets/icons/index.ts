@@ -18,6 +18,9 @@ export { default as nextSvg } from "./next.svg";
 export { default as gitSvg } from "./git.svg";
 export { default as tailwindSvg } from "./tailwind.svg";
 export { default as envelopeSvg} from './envelope.svg'
+export { default as githubSvg} from './github.svg'
+export { default as instagramSvg} from './instagram.svg'
+export { default as linkedinSvg} from './linkedin.svg'
 
 export const skillsIcons: SkillsIconsType[] = [
   { name: "html icon", src: htmlSvg },
