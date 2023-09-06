@@ -13,7 +13,7 @@ const Feed = ({ I_AM, name, setName }: FeedProps) => {
     }, I_AM[0].length * 1000);
   }, [name]);
   return (
-    <section id="home" className="h-screen bg-[#D0C3A3] p-36 snap-start">
+    <section id="home" className="h-screen  p-36 snap-start">
       <div>
         Hi, my name is
         <h1 className="uppercase text-4xl">Egor Lagunovich</h1>

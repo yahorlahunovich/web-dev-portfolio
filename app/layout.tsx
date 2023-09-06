@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import "./globals.css";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
@@ -15,13 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-mainGreen text-mainWhite">
         <Navbar />
-        <main className="snap-y snap-proximity overflow-y-scroll h-screen duration-300 scroll-smooth">
+        <main className="h-screen duration-300 scroll-smooth">
           {" "}
           {children}
         </main>
-        <Footer />
       </body>
     </html>
   );

@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        mainGreen: "#86A184",
+        lightGreen: "#B8C7AB",
+        darkGreen: "#45604A",
+        mainWhite: "#DBDDD0",
+      },
       // animation: {
       //   typing: `typing 4s steps(19)`,
       //   blink: "blink 0.1s steps(19)",

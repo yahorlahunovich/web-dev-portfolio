@@ -6,7 +6,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="h-screen bg-white snap-start">
+    <section id="contact" className="h-screen  snap-start">
       Contact
       <h2>Do you want to work with me?</h2>
       <p>Let's get in touch!</p>

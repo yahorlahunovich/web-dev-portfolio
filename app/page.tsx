@@ -7,6 +7,7 @@ import Feed from "@/components/Feed";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import { I_AM } from "@/constants";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [name, setName] = useState(I_AM[0]);
@@ -17,6 +18,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 }
