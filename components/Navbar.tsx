@@ -8,7 +8,7 @@ const Navbar = () => {
   let scroll = window.scrollY;
   useEffect(() => {
     const listener = () => {
-      if (window.scrollY > 140) {
+      if (window.scrollY > 70) {
         setAnimateHeader(true);
       } else setAnimateHeader(false);
     };
@@ -23,12 +23,12 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 z-50 w-full flex flex-row items-center justify-between p-3 px-32 ${
-        animateHeader ? "transition-all" : ""
+      className={`fixed top-0 left-0 z-50 w-full flex flex-row items-center justify-between p-6 px-32 ${
+        animateHeader ? "transition-all border-b border-mainWhite bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50" : ""
       }`}
     >
       <div>
-        <a href="#home" className="uppercase">
+        <a href="#home" className="uppercase text-xl">
           {/* <Image /> */}Egor Lagunovich
         </a>
       </div>
@@ -45,7 +45,7 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <a>resume</a>
+            <a className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-mainWhite after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center cursor-pointer">resume</a>
           </li>
         </ul>
       </nav>

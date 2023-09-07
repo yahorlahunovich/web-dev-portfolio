@@ -14,18 +14,21 @@ const config: Config = {
         darkGreen: "#45604A",
         mainWhite: "#DBDDD0",
       },
+      backgroundImage: {
+        mountains: "url('/public/assets/images')",
+      },
       // animation: {
-      //   typing: `typing 4s steps(19)`,
+      //   // typing: `typing 4s steps(19)`,
       //   blink: "blink 0.1s steps(19)",
       // },
       // keyframes: {
       //   typing: {
       //     // 40%, 60% { left: calc},
       //   },
-      //   blink: {
-      //     from: { "border-right-color": "transparent" },
-      //     to: { "border-right-color": "black" },
-      //   },
+      // blink: {
+      //   from: { "border-right-color": "transparent" },
+      //   to: { "border-right-color": "mainWhite" },
+      // },
       // },
     },
   },

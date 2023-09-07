@@ -1,6 +1,6 @@
 import { githubSvg, instagramSvg, linkedinSvg } from "@/public/assets/icons";
 
-export const I_AM = [
+export const superpowers = [
   "Front-End Developer",
   "Speedcuber",
   "Photographer",

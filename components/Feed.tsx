@@ -1,29 +1,38 @@
-import React, { useEffect } from "react";
+"use client";
+
+import { TypePhase, useTypedSuperpower } from "@/hooks/useTypedSuperpower";
+import classNames from "classnames";
+import React, { useEffect, useState } from "react";
 
 type FeedProps = {
-  I_AM: string[];
-  name: string;
-  setName(name: string): void;
+  superpowers: string[];
 };
 
-const Feed = ({ I_AM, name, setName }: FeedProps) => {
-  useEffect(() => {
-    setTimeout(() => {
-      setName(I_AM[1]);
-    }, I_AM[0].length * 1000);
-  }, [name]);
+const Feed = ({ superpowers }: FeedProps) => {
+  const { typedSuperpower, selectedSuperpower, phase, resume } =
+    useTypedSuperpower(superpowers);
   return (
-    <section id="home" className="h-screen  p-36 snap-start">
+    <section id="home" className="h-screen  p-36 snap-start bg-mountains">
       <div>
-        Hi, my name is
-        <h1 className="uppercase text-4xl">Egor Lagunovich</h1>
+        <span className="text-3xl"> Hi, my name is</span>
+        <h1 className="uppercase text-6xl font-bold  ">Egor Lagunovich</h1>
       </div>
       <div
-        className={`overflow-hidden whitespace-nowrap font-mono animate-typing `}
+        className={`text-5xl mt-8 overflow-hidden whitespace-nowrap font-mono animate-typing cursor-pointer`}
+        onClick={resume}
       >
-        I am
-        <ul>
-          <li className="border-r-4 inline-block border-r-black animate-blink">
+        <span className="text-darkGreen">I am </span>
+        <span
+          aria-label={selectedSuperpower}
+          className={classNames("text-primary-400 pt-4 pb-12 min-h-[10rem]", {
+            ["end-cursor"]: phase !== TypePhase.Deleting,
+            ["blinking"]: phase === TypePhase.Pausing,
+          })}
+        >
+          {typedSuperpower}
+        </span>
+        {/* <ul>
+          <li className="border-r-4 inline-block border-r-mainWhite animate-blink">
             Front-End Developer
           </li>
           <li>Speedcuber</li>
@@ -31,7 +40,7 @@ const Feed = ({ I_AM, name, setName }: FeedProps) => {
           <li>Investor</li>
           <li>Sportsman</li>
           <li>Student</li>
-        </ul>
+        </ul> */}
       </div>
     </section>
   );
