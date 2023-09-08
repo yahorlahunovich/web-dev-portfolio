@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
-const Navbar = () => {
+const Header = () => {
   const [animateHeader, setAnimateHeader] = useState(false);
   let scroll = window.scrollY;
   useEffect(() => {
@@ -53,4 +53,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;
