@@ -28,7 +28,7 @@ const Header = () => {
       }`}
     >
       <div>
-        <a href="#home" className="uppercase text-xl">
+        <a href="/#home" className="uppercase text-xl">
           {/* <Image /> */}Egor Lagunovich
         </a>
       </div>
@@ -37,7 +37,7 @@ const Header = () => {
           {navLinks.map((link) => (
             <li>
               <a
-                href={`#${link}`}
+                href={`/#${link}`}
                 className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-mainWhite after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
               >
                 {link}
