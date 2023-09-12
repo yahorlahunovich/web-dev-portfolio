@@ -19,9 +19,12 @@
 @layer components {
   .end-cursor:after {
     content: "|";
-    @apply text-mainWhite;
+    @apply text-mainYellow;
   }
-
+  h1 {
+    @apply text-mainYellow;
+    @apply text-4xl
+  }
   .end-cursor.blinking:after {
     animation: blink 1s step-start infinite;
   }

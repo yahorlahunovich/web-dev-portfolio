@@ -4,7 +4,11 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section id="skills" className="flex flex-col justify-center items-center h-screen snap-start px-32">
+    <section
+      id="skills"
+      className="flex flex-col justify-center items-center h-screen snap-start px-32"
+      data-aos="fade-up"
+    >
       <h1 className="text-6xl">Skills&Experience</h1>
       <div className="text-xl w-1/2 m-8">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit id autem

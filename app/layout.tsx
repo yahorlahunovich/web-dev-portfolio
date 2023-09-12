@@ -14,12 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-mainGreen text-mainWhite">
+      <body className="bg-mainBlue text-white">
         <Navbar />
-        <main className="h-screen duration-300 scroll-smooth">
-          {" "}
-          {children}
-        </main>
+        <main className="h-screen duration-300 scroll-smooth"> {children}</main>
       </body>
     </html>
   );

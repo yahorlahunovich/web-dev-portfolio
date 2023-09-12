@@ -12,7 +12,11 @@ const Feed = ({ superpowers }: FeedProps) => {
   const { typedSuperpower, selectedSuperpower, phase, resume } =
     useTypedSuperpower(superpowers);
   return (
-    <section id="home" className="h-screen  p-36 snap-start bg-mountains">
+    <section
+      id="home"
+      className="h-screen  p-36 snap-start bg-mountains"
+      data-aos="fade-up"
+    >
       <div>
         <span className="text-3xl"> Hi, my name is</span>
         <h1 className="uppercase text-6xl font-bold  ">Egor Lagunovich</h1>
@@ -24,7 +28,7 @@ const Feed = ({ superpowers }: FeedProps) => {
         <span className="text-darkGreen">I am </span>
         <span
           aria-label={selectedSuperpower}
-          className={classNames("text-primary-400 pt-4 pb-12 min-h-[10rem]", {
+          className={classNames("text-mainYellow pt-4 pb-12 min-h-[10rem]", {
             ["end-cursor"]: phase !== TypePhase.Deleting,
             ["blinking"]: phase === TypePhase.Pausing,
           })}

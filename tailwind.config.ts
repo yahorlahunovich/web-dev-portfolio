@@ -9,10 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        mainGreen: "#86A184",
-        lightGreen: "#B8C7AB",
-        darkGreen: "#45604A",
-        mainWhite: "#DBDDD0",
+        mainBlue: "#171B27",
+        mainYellow: "#FFB600",
       },
       backgroundImage: {
         mountains: "url('/public/assets/images')",

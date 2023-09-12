@@ -8,6 +8,7 @@ const Projects = () => {
     <section
       id="projects"
       className="flex flex-col justify-center items-center snap-start px-32 text-4xl"
+      data-aos="fade-up"
     >
       <h1 className="text-center mb-8">Projects</h1>
       <p className="text-xl w-1/2 text-center">
