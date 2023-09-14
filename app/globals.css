@@ -23,10 +23,30 @@
   }
   h1 {
     @apply text-mainYellow;
-    @apply text-4xl
+    @apply text-4xl;
   }
   .end-cursor.blinking:after {
     animation: blink 1s step-start infinite;
+  }
+  .main-bg {
+    /* background-image: linear-gradient(
+          to right,
+          rgba(23, 27, 39, 0.8),
+          rgba(23, 27, 39, 0.8)
+        ),
+        url("../public/assets/images/bg-blue.jpg");
+    background-position: center;
+    background-size: cover; */
+    /* background-image: url("../public/assets/images/bg-blue.jpg"); */
+    background-image: linear-gradient(
+        to right,
+        rgba(23, 27, 39, 0.9),
+        rgba(23, 27, 39, 0.9)
+      ),
+      url("../public/assets/images/bg-blue.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   @keyframes blink {

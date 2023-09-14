@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col justify-center text-3xl h-screen snap-start px-32"
+      className="flex flex-col justify-center min-h-screen text-3xl snap-start px-32 main-bg "
       data-aos="fade-up"
     >
       <h1 className="text-center">Contact</h1>

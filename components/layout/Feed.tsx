@@ -14,12 +14,14 @@ const Feed = ({ superpowers }: FeedProps) => {
   return (
     <section
       id="home"
-      className="h-screen  p-36 snap-start bg-mountains"
+      className="h-screen flex flex-col justify-center items-center px-36 pb-12 snap-start gap-8 main-bg "
       data-aos="fade-up"
     >
       <div>
-        <span className="text-3xl"> Hi, my name is</span>
-        <h1 className="uppercase text-6xl font-bold  ">Egor Lagunovich</h1>
+        {/* <span className="text-3xl"> Hi, my name is</span> */}
+        <h1 className="uppercase text-6xl font-bold text-white  ">
+          Hi, I'm Egor Lagunovich
+        </h1>
       </div>
       <div
         className={`text-5xl mt-8 overflow-hidden whitespace-nowrap font-mono animate-typing cursor-pointer`}
@@ -35,17 +37,8 @@ const Feed = ({ superpowers }: FeedProps) => {
         >
           {typedSuperpower}
         </span>
-        {/* <ul>
-          <li className="border-r-4 inline-block border-r-mainWhite animate-blink">
-            Front-End Developer
-          </li>
-          <li>Speedcuber</li>
-          <li>Photographer</li>
-          <li>Investor</li>
-          <li>Sportsman</li>
-          <li>Student</li>
-        </ul> */}
       </div>
+      <button className=" text-white text-4xl">About me</button>
     </section>
   );
 };

@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col justify-center items-center h-screen snap-start px-32"
+      className="flex flex-col justify-center items-center min-h-screen snap-start px-32 main-bg"
       data-aos="fade-up"
     >
       <h1 className="text-6xl">Skills&Experience</h1>

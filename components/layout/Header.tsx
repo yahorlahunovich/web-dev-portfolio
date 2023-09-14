@@ -24,12 +24,14 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 z-50 w-full flex flex-row items-center justify-between py-6 px-32 ${
-        animateHeader ? "transition-all border-b border-3 border-mainWhite bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50 mt-0 duration-500" : "mt-8"
+        animateHeader
+          ? "transition-all border-b border-3 border-mainWhite bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50 mt-0 duration-500"
+          : "mt-8"
       }`}
     >
       <div>
-        <a href="/#home" className="uppercase text-xl">
-          {/* <Image /> */}Egor Lagunovich
+        <a href="/#home" className="uppercase text-xl hover:text-mainYellow">
+          Lagunovich
         </a>
       </div>
       <nav className={"flex flex-row"}>
@@ -45,7 +47,9 @@ const Header = () => {
             </li>
           ))}
           <li>
-            <a className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center cursor-pointer">resume</a>
+            <a className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center cursor-pointer">
+              resume
+            </a>
           </li>
         </ul>
       </nav>

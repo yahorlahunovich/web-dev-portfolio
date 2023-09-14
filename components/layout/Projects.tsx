@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col justify-center items-center snap-start px-32 text-4xl"
+      className="flex flex-col justify-center items-center snap-start p-32 text-4xl"
       data-aos="fade-up"
     >
       <h1 className="text-center mb-8">Projects</h1>
@@ -22,7 +22,7 @@ const Projects = () => {
       {projects.map((project) => (
         <Project project={project} />
       ))}
-      <Link href="/projects" className="bg-black p-5">
+      <Link href="/projects" className="bg-black p-5" data-aos="fade-up">
         View All Projects
       </Link>
     </section>

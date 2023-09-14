@@ -1,2 +1,2 @@
-export { default as mountainsBg } from "./mountainsBg.jpg";
 export { default as laptopImg } from "./laptop.png";
+export { default as meImg } from "./me.jpg";
