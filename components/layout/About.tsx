@@ -14,7 +14,7 @@ const About = () => {
           <Image src={meImg} alt="my personal photo" width={600} />
         </div>
         <div className="w-1/2 text-xl leading-8 tracking-wider">
-          <h1 className="text-center mb-5">About Me</h1>
+          <h2 className="text-center mb-5">About Me</h2>
           <p>
             My name is Egor Lagunovich. I'm a{" "}
             <span className="capitalize text-mainYellow">

@@ -14,7 +14,7 @@ const Project = ({ project }: ProjectProps) => {
       data-aos="fade-up"
     >
       <div className="w-1/2">
-        <Image src={img} alt={title} />
+        <Image src={img} alt={title} className="filterr" />
       </div>
       <div className="flex flex-col justify-center items-center w-1/2">
         <h2 className="text-3xl font-bold text-darkGreen">{title}</h2>

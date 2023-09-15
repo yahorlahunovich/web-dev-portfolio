@@ -30,7 +30,10 @@ const Header = () => {
       }`}
     >
       <div>
-        <a href="/#home" className="uppercase text-xl hover:text-mainYellow">
+        <a
+          href="/#home"
+          className="uppercase text-xl font-bold hover:text-mainYellow"
+        >
           Lagunovich
         </a>
       </div>

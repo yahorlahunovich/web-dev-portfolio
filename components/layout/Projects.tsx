@@ -10,8 +10,8 @@ const Projects = () => {
       className="flex flex-col justify-center items-center snap-start p-32 text-4xl"
       data-aos="fade-up"
     >
-      <h1 className="text-center mb-8">Projects</h1>
-      <p className="text-xl w-1/2 text-center">
+      <h2 className="text-center mb-8">My Projects</h2>
+      <p className="text-xl w-1/2 text-center leading-8 tracking-wider">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa qui modi
         quasi eius quod odio tempore minus voluptates at a labore, vero in
         provident nostrum explicabo consequatur neque deleniti tempora
