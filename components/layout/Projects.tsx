@@ -11,14 +11,21 @@ const Projects = () => {
       data-aos="fade-up"
     >
       <h2 className="text-center mb-8">My Projects</h2>
-      <p className="text-xl w-1/2 text-center leading-8 tracking-wider">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa qui modi
-        quasi eius quod odio tempore minus voluptates at a labore, vero in
-        provident nostrum explicabo consequatur neque deleniti tempora
-        voluptatum ab harum vel. Eaque sequi consectetur laborum autem sit
-        labore officia alias temporibus unde? At molestiae impedit facere
-        obcaecati!
-      </p>
+      <div className="text-xl w-2/3 text-center leading-8 tracking-wider">
+        <p>
+          Welcome to my digital playground, where creativity meets
+          functionality. In this portfolio section, I proudly showcase a curated
+          selection of my projects, each a testament to my passion for frontend
+          development. With each pixel, line of code, and user interaction, I
+          strive to bring unique ideas to life on the web.
+        </p>
+        <p>
+          Feel free to click, explore, and immerse yourself in the world of
+          frontend development. If you like what you see, let's collaborate and
+          turn your ideas into the next exciting project in this growing
+          collection.
+        </p>
+      </div>
       {projects.map((project) => (
         <Project project={project} />
       ))}

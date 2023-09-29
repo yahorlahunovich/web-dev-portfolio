@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 z-50 w-full flex flex-row items-center justify-between py-6 px-32 ${
+      className={`hidden fixed top-0 left-0 z-50 w-full lg:flex flex-row items-center justify-between py-6 px-32 ${
         animateHeader
           ? "transition-all border-b border-3 border-mainWhite bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50 mt-0 duration-500"
           : "mt-8"

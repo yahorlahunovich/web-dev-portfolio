@@ -39,3 +39,16 @@ export const second_half_skillsIcons: SkillsIconsType[] = [
   { name: "tailwind icon", src: tailwindSvg, caption: "Tailwind" },
   { name: "python icon", src: pythonSvg, caption: "Python" },
 ];
+
+export const all_skills: SkillsIconsType[] = [
+  { name: "html icon", src: htmlSvg, caption: "HTML5" },
+  { name: "css icon", src: cssSvg, caption: "CSS3" },
+  { name: "js icon", src: jsSvg, caption: "JavaScript" },
+  { name: "ts icon", src: tsSvg, caption: "TypeScript" },
+  { name: "react icon", src: reactSvg, caption: "React" },
+  { name: "redux icon", src: reduxSvg, caption: "Redux" },
+  { name: "next icon", src: nextSvg, caption: "Next" },
+  { name: "git icon", src: gitSvg, caption: "Git" },
+  { name: "tailwind icon", src: tailwindSvg, caption: "Tailwind" },
+  { name: "python icon", src: pythonSvg, caption: "Python" },
+];

@@ -10,13 +10,13 @@ const Project = ({ project }: ProjectProps) => {
   const { title, desc, tools, link, img } = project;
   return (
     <div
-      className="flex flex-row text-xl justify-center items-center px-32 m-10"
+      className="flex flex-row text-xl justify-center items-center gap-12 px-32 m-10"
       data-aos="fade-up"
     >
       <div className="w-1/2">
-        <Image src={img} alt={title} className="filterr" />
+        <Image src={img} alt={title} className="filterr" width={1000}/>
       </div>
-      <div className="flex flex-col justify-center items-center w-1/2">
+      <div className="flex flex-col justify-start  w-1/2">
         <h2 className="text-3xl font-bold text-darkGreen">{title}</h2>
         <p>{desc}</p>
         <h3>Development tools:</h3>
@@ -26,12 +26,8 @@ const Project = ({ project }: ProjectProps) => {
           ))}
         </ul>
         <div>
-          <button className="text-2xl py-5 px-10 bg-gray-500 text-black">
-            Check Github
-          </button>
-          <button className="text-2xl py-5 px-10 bg-gray-500 text-black">
-            Check Project
-          </button>
+          <button className="text-white">Check Github</button>
+          <button className="text-white">Check Project</button>
         </div>
       </div>
     </div>

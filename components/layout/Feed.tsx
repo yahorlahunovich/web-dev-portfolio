@@ -19,12 +19,12 @@ const Feed = ({ superpowers }: FeedProps) => {
     >
       <div>
         {/* <span className="text-3xl"> Hi, my name is</span> */}
-        <h1 className="uppercase text-6xl font-bold text-white  ">
+        <h1 className="uppercase text-xl lg:text-6xl font-bold text-white  ">
           Hi, I'm Egor Lagunovich
         </h1>
       </div>
       <div
-        className={`text-5xl mt-8 overflow-hidden whitespace-nowrap font-mono animate-typing cursor-pointer`}
+        className={`text-xl lg:text-5xl mt-8 overflow-hidden whitespace-nowrap font-mono animate-typing cursor-pointer`}
         onClick={resume}
       >
         <span className="text-darkGreen">I am </span>
@@ -38,7 +38,9 @@ const Feed = ({ superpowers }: FeedProps) => {
           {typedSuperpower}
         </span>
       </div>
-      <button className=" text-white text-4xl">About me</button>
+      <a className=" text-white text-4xl border bg-white-1 rounded" href="#projects">
+        Projects
+      </a>
     </section>
   );
 };
