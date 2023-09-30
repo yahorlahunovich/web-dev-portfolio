@@ -3,6 +3,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Navbar from "@/components/layout/Header";
+import { useEffect, useState } from "react";
+import LoadingScreen from "@/components/LoadingScreen";
 
 export const metadata: Metadata = {
   title: "Lagunovich",
@@ -14,11 +16,26 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
   return (
     <html lang="en">
       <body className="bg-mainBlue text-white">
-        <Navbar />
-        <main className="h-screen duration-300 scroll-smooth"> {children}</main>
+        {isLoading ? (
+          <LoadingScreen />
+        ) : (
+          <>
+            <Navbar />
+            <main className="h-screen duration-300 scroll-smooth">
+              {" "}
+              {children}
+            </main>
+          </>
+        )}
       </body>
     </html>
   );

@@ -24,12 +24,11 @@ const Contact = () => {
         </p>
         <p>I'm also open to full-time hiring.</p>
         <div className="flex flex-row gap-2 justify-center items-center">
-          My email is{" "}
           <a
             href="mailto: egorlagunovich@gmail.com"
             className="flex flex-row justify-center items-center"
           >
-            <Image src={envelopeSvg} alt="envelope icon" width={20} />{" "}
+            <Image src={envelopeSvg} alt="envelope icon" width={40} />{" "}
             egorlagunovich@gmail.com
           </a>
         </div>

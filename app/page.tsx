@@ -9,12 +9,13 @@ import Skills from "@/components/layout/Skills";
 import { superpowers } from "@/constants";
 import Footer from "@/components/layout/Footer";
 import Aos from "aos";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 
 export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   return (
     <>
       <Feed superpowers={superpowers} />
