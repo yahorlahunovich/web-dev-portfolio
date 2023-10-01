@@ -13,7 +13,7 @@ const Project = ({ project }: ProjectProps) => {
       className="flex flex-row text-xl justify-center items-center gap-12 px-32 m-10"
       data-aos="fade-up"
     >
-      <div className="w-1/2">
+      <div className="">
         <Image src={img} alt={title} className="filterr" width={1000}/>
       </div>
       <div className="flex flex-col justify-start  w-1/2">

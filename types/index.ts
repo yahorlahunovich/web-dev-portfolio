@@ -10,4 +10,5 @@ export type ProjectsType = {
   tools: string[];
   img: any;
   link: string;
+  githubLink: string;
 };
