@@ -52,4 +52,15 @@
       opacity: 0;
     }
   }
+  .disappearing {
+    animation: disappearing 0.5s linear;
+  }
+  @keyframes disappearing {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 }
