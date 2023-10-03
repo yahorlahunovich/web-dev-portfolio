@@ -13,7 +13,7 @@ const LoadingScreen = () => {
   }, []);
   return (
     <div className="text-3xl min-h-screen flex justify-center items-center main-bg">
-      <span className={`"font-bold" ${!isNameShown && "disappearing"}`}>
+      <span className={`${!isNameShown && "disappearing"} font-bold`}>
         Egor Lagunovich
       </span>
       &nbsp;

@@ -23,6 +23,7 @@ export { default as githubSvg } from "./github.svg";
 export { default as instagramSvg } from "./instagram.svg";
 export { default as linkedinSvg } from "./linkedin.svg";
 export { default as pythonSvg } from "./python.svg";
+export { default as arrowUpSvg } from "./arrowUp.svg";
 
 export const first_half_skillsIcons: SkillsIconsType[] = [
   { name: "html icon", src: htmlSvg, caption: "HTML5" },

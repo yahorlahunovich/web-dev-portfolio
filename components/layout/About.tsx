@@ -6,14 +6,15 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col lg:flex-row justify-center items-center text-3xl gap-11 min-h-screen snap-start py-32 px-8"
+      className="flex flex-col lg:flex-row justify items-center text-3xl gap-11 min-h-screen snap-start py-32 px-8"
       data-aos="fade-up"
     >
-      <div className="w-full lg:w-1/2">
-        <Image src={meImg} alt="my personal photo" width={600} />
+      <div className="w-full lg:w-1/2 rounded-xl">
+        <Image src={meImg} alt="my personal photo" width={500} />
       </div>
-      <div className="lg:w-1/2 w-full text-sm lg:text-xl leading-8 tracking-wider">
-        <h2 className="text-center mb-5">About Me</h2>
+      <div className="lg:w-1/2 flex justify-center flex-col items-center w-full text-sm lg:text-xl leading-8 tracking-wider">
+        <h2 className="text-center">About Me</h2>
+        <hr className="border-green-300 text-center fle w-7 border-[3px]" />
         <p>
           My name is Egor Lagunovich. I'm a{" "}
           <span className="capitalize text-mainYellow">

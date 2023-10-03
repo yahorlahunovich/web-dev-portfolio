@@ -7,11 +7,11 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col justify-center items-center snap-start p-32 text-4xl"
+      className="flex flex-col justify-center items-center snap-start text-4xl"
       data-aos="fade-up"
     >
       <h2 className="text-center mb-8">My Projects</h2>
-      <div className="text-xl w-2/3 text-center leading-8 tracking-wider">
+      <div className="text-xl w-2/3  leading-8 tracking-wider">
         <p>
           Welcome to my digital playground, where creativity meets
           functionality. In this portfolio section, I proudly showcase a curated
@@ -27,9 +27,9 @@ const Projects = () => {
         </p>
       </div>
       {projects.map((project) => (
-        <Project project={project} />
+        <Project project={project} key={project.title} />
       ))}
-      <Link href="/projects" className="bg-black p-5" data-aos="fade-up">
+      <Link href="/projects" className="p-5">
         View All Projects
       </Link>
     </section>

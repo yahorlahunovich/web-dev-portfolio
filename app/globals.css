@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,6 +18,9 @@
 }
 
 @layer components {
+  * {
+    font-family: "Roboto", sans-serif;
+  }
   .end-cursor:after {
     content: "|";
     @apply text-mainYellow;
@@ -26,7 +30,6 @@
     @apply text-4xl;
   }
   h2 {
-    @apply text-mainYellow;
     @apply text-4xl;
     @apply uppercase;
     @apply font-semibold;
@@ -62,5 +65,52 @@
     100% {
       opacity: 0;
     }
+  }
+  .scroll {
+    margin-top: 100px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    animation: down 2s infinite;
+    -webkit-animation: down 2s infinite;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 18px;
+      width: 18px;
+      height: 18px;
+      border-left: 2px solid white;
+      border-bottom: 2px solid white;
+      transform: rotate(-45deg);
+    }
+  }
+  @keyframes down {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(15px);
+    }
+    40% {
+      transform: translate(0);
+    }
+  }
+
+  @-webkit-keyframes down {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(15px);
+    }
+    40% {
+      transform: translate(0);
+    }
+  }
+  .tool:hover path {
+    fill: #ffb600;
   }
 }

@@ -24,17 +24,15 @@ export const social_media_links = [
     src: "https://github.com/egorlagunovich",
     iconSrc: githubSvg,
   },
-
-  {
-    name: "Instagram",
-    src: "https://www.instagram.com/egorlagunovich/",
-    iconSrc: instagramSvg,
-  },
-
   {
     name: "LinkedIn",
     src: "https://www.linkedin.com/in/egorlagunovich/",
     iconSrc: linkedinSvg,
+  },
+  {
+    name: "Instagram",
+    src: "https://www.instagram.com/egorlagunovich/",
+    iconSrc: instagramSvg,
   },
 ];
 
@@ -46,6 +44,7 @@ export const projects: ProjectsType[] = [
     img: quizImg,
     link: "https://egorlagunovich.github.io/quiz-app/",
     githubLink: "https://github.com/egorlagunovich/quiz-app",
+    bg: "#557EEF",
   },
   {
     title: "Pomodoro Timer",

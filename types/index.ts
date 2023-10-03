@@ -11,4 +11,5 @@ export type ProjectsType = {
   img: any;
   link: string;
   githubLink: string;
+  bg?: string;
 };

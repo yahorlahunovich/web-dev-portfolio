@@ -7,27 +7,41 @@ type ProjectProps = {
 };
 
 const Project = ({ project }: ProjectProps) => {
-  const { title, desc, tools, link, img } = project;
+  const { title, desc, tools, link, img, bg, githubLink } = project;
   return (
     <div
-      className="flex flex-row text-xl justify-center items-center gap-12 px-32 m-10"
+      className={`flex flex-row min-h-screen w-full text-xl justify-center items-center gap-12 px-32 m-10 bg-[${bg}]`}
       data-aos="fade-up"
     >
       <div className="">
-        <Image src={img} alt={title} className="filterr" width={1000}/>
+        <Image src={img} alt={title} className="filterr" width={1000} />
       </div>
-      <div className="flex flex-col justify-start  w-1/2">
-        <h2 className="text-3xl font-bold text-darkGreen">{title}</h2>
-        <p>{desc}</p>
-        <h3>Development tools:</h3>
-        <ul className="flex flex-row flex-wrap">
+      <div className="flex flex-col justify-start gap-6 w-1/2">
+        <h4 className="text-5xl uppercase font-bold">{title}</h4>
+        <p className="text-sm lg:text-xl leading-8 tracking-wider">{desc}</p>
+        <h5 className="uppercase text-sm lg:text-xl font-bold">
+          Development tools:
+        </h5>
           {tools.map((tool) => (
-            <li className="p-3 rounded text-mainYellow">{tool}</li>
+            <ul className="flex flex-col px-6 list-disc">
+              <li>{tool}</li>
+            </ul>
           ))}
-        </ul>
         <div>
-          <button className="text-white">Check Github</button>
-          <button className="text-white">Check Project</button>
+          <a
+            href={link}
+            target="_blank"
+            className="uppercase border px-8 py-3 border-white mr-5"
+          >
+            view Project
+          </a>
+          <a
+            href={githubLink}
+            target="_blank"
+            className="uppercase border px-8 py-3 border-white"
+          >
+            view Github
+          </a>
         </div>
       </div>
     </div>
