@@ -2,7 +2,6 @@
 
 import { TypePhase, useTypedSuperpower } from "@/hooks/useTypedSuperpower";
 import classNames from "classnames";
-import React, { useEffect, useState } from "react";
 
 type FeedProps = {
   superpowers: string[];
@@ -14,8 +13,8 @@ const Feed = ({ superpowers }: FeedProps) => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-between items-center px-36 pb-12 snap-start gap-8 main-bg"
-      // data-aos="flip-up"
+      className="w-full overflow-hidden min-h-screen flex flex-col justify-between items-center pb-12 snap-start gap-8 main-bg"
+      data-aos="fade-up"
     >
       <div className="mt-64 flex flex-col justify-center items-center">
         <div>
@@ -31,7 +30,7 @@ const Feed = ({ superpowers }: FeedProps) => {
           <span
             aria-label={selectedSuperpower}
             className={classNames(
-              "text-mainYellow pt-4 pb-12 min-h-[10rem] font-mono",
+              "text-mainYellow pt-4 pb-12 min-h-[10rem] font-mono overflow-hidden",
               {
                 ["end-cursor"]: phase !== TypePhase.Deleting,
                 ["blinking"]: phase === TypePhase.Pausing,

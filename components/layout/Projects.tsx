@@ -8,11 +8,11 @@ const Projects = () => {
     <section
       id="projects"
       className="flex flex-col justify-center items-center snap-start text-4xl bg-mainBlue"
-      data-aos="zoom-in"
+      // data-aos="zoom-in"
     >
       <h2 className="text-center">My Projects</h2>
       <hr className="border-mainYellow text-center fle w-8 m-4 border-[3px] rounded-full" />
-      <div className="text-xl w-2/3  leading-8 tracking-wider mb-12">
+      <div className="text-xl w-full lg:w-2/3 leading-8 tracking-wider mb-12 px-8 lg:px-32">
         <p>
           Welcome to my digital playground, where creativity meets
           functionality. In this portfolio section, I proudly showcase a curated

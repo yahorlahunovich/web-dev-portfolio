@@ -1,6 +1,5 @@
 export { default as laptopImg } from "./laptop.png";
 export { default as meImg } from "./me.jpg";
-export { default as contactImg } from "./contact.jpg";
 export { default as quizImg } from "./quiz.png";
 export { default as pomImg } from "./pom_final.png";
 export { default as promptopiaImg } from "./promptopia_final.png";

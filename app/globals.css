@@ -29,8 +29,8 @@
     /* @apply text-mainYellow;   */
     @apply text-4xl;
   }
-  p{
-    @apply text-textMain
+  p {
+    @apply text-textMain;
   }
   h2 {
     @apply text-4xl;
@@ -59,7 +59,7 @@
     }
   }
   .disappearing {
-    animation: disappearing 0.5s linear;
+    animation: disappearing 0.3s linear;
   }
   @keyframes disappearing {
     0% {

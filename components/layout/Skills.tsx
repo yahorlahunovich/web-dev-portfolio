@@ -11,11 +11,11 @@ const Skills = () => {
     <section
       id="skills"
       className="flex flex-col justify-center items-center min-h-screen snap-start py-4 px-8 lg:px-32 main-bg"
-      data-aos="fade-up"
+      // data-aos="fade-up"
     >
       <h2 className="">My Skills</h2>
       <hr className="border-mainYellow text-center fle w-8 m-4 border-[3px] rounded-full" />
-      <div className="text-sm lg:text-xl w-full lg:w-2/3  leading-8 tracking-wider">
+      <div className="text-lg lg:text-xl w-full lg:w-2/3  leading-8 tracking-wider">
         <div className="text-[#CDCFCC]">
           <p>
             In the world of Front-end Development, versatility is key. As a
@@ -64,12 +64,12 @@ const Skills = () => {
           <div
             className="flex flex-col justify-center items-center gap-2"
             data-aos="fade-up"
+            key={icon.name}
           >
             <Image
               src={icon.src}
-              key={icon.name}
               alt={icon.name}
-              className="h-[50px] sm:h-[125px] hover:fill-mainYellow"
+              className="h-[70px] sm:h-[125px] hover:fill-mainYellow"
             />
             <caption className="text-lg">{icon.caption}</caption>
           </div>

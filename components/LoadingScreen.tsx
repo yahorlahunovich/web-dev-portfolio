@@ -6,10 +6,10 @@ const LoadingScreen = () => {
   const [isPortfiolioShown, setIsPortfolioShown] = useState(true);
   const [isNameShown, setIsNameShown] = useState(true);
   useEffect(() => {
-    setTimeout(() => setIsPortfolioShown(false), 1150);
+    setTimeout(() => setIsPortfolioShown(false), 800);
   }, []);
   useEffect(() => {
-    setTimeout(() => setIsNameShown(false), 1050);
+    setTimeout(() => setIsNameShown(false), 750);
   }, []);
   return (
     <div className="text-3xl min-h-screen flex justify-center items-center main-bg">
@@ -17,7 +17,7 @@ const LoadingScreen = () => {
         Egor Lagunovich
       </span>
       &nbsp;
-      <span className={`${!isPortfiolioShown && "disappearing"}`}>
+      <span className={`text-mainYellow ${!isPortfiolioShown && "disappearing"}`}>
         Porfolio
       </span>
     </div>

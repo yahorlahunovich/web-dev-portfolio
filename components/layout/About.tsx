@@ -6,13 +6,13 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex text-textMain flex-col lg:flex-row justify items-center text-3xl gap-11 min-h-screen snap-start py-32 px-8 bg-mainBlue"
-      data-aos="flip-up"
+      className="flex text-textMain flex-col-reverse lg:flex-row justify-center items-center text-3xl gap-11 min-h-screen snap-start py-32 px-8 bg-mainBlue"
+      // data-aos="flip-up"
     >
       <div className="w-full lg:w-1/2 rounded-xl">
         <Image src={meImg} alt="my personal photo" width={500} />
       </div>
-      <div className="lg:w-1/2 flex justify-center flex-col items-center w-full text-sm lg:text-xl leading-8 tracking-wider">
+      <div className="lg:w-1/2 flex justify-center flex-col items-center w-full text-lg lg:text-xl leading-8 tracking-wider">
         <h2 className="text-center text-white">About Me</h2>
         <hr className="border-mainYellow text-center fle w-8 m-4 border-[3px] rounded-full" />
         <p>
