@@ -1,6 +1,7 @@
 import { ProjectsType } from "@/types";
 import Image from "next/image";
 import React from "react";
+import Button from "./Button";
 
 type ProjectProps = {
   project: ProjectsType;
@@ -32,8 +33,10 @@ const Project = ({ project }: ProjectProps) => {
             <li>{tool}</li>
           </ul>
         ))}
-        <div className="flex flex-row">
-          <a
+        <div className="flex flex-row gap-8">
+          <Button link={link} name="View Project" />
+          <Button link={githubLink} name="View GitHub" />
+          {/* <a
             href={link}
             target="_blank"
             className="uppercase border px-8 py-3 border-white mr-5"
@@ -46,7 +49,7 @@ const Project = ({ project }: ProjectProps) => {
             className="uppercase border px-8 py-3 border-white"
           >
             view Github
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

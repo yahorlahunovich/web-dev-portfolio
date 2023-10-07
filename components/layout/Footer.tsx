@@ -35,6 +35,14 @@ const Footer = () => {
             Egor Lagunovich
           </a>
         </div>
+        <div className="mt-2">
+          <a
+            href="https://github.com/egorlagunovich/portfolio"
+            className="text-[#CDCFCC] hover:text-white"
+          >
+            Source Code
+          </a>
+        </div>
       </div>
     </footer>
   );

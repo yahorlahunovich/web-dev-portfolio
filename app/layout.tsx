@@ -24,8 +24,8 @@ export default function RootLayout({
     }, 1000);
   }, []);
   const burgerToggle = (a: boolean) => {
-    setIsBurgerClicked(a)
-  }
+    setIsBurgerClicked(a);
+  };
   return (
     <html lang="en">
       <body className="text-white bg-mainBlue">
@@ -35,7 +35,7 @@ export default function RootLayout({
           <>
             <Navbar
               isBurgerClicked={isBurgerClicked}
-              // burgerToggle={burgerToggle()}
+              burgerToggle={burgerToggle}
             />
             <main className="h-screen duration-300 scroll-smooth ">
               {" "}

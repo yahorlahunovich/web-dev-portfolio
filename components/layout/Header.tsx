@@ -2,12 +2,11 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { meLogoImg } from "@/public/assets/images";
 import { logo } from "@/public/assets/icons";
 
 type HeaderProps = {
   isBurgerClicked: boolean;
-  burgerToggle(a: boolean): boolean;
+  burgerToggle(a: boolean): void;
 };
 
 const Header = ({ isBurgerClicked, burgerToggle }: HeaderProps) => {
@@ -41,11 +40,7 @@ const Header = ({ isBurgerClicked, burgerToggle }: HeaderProps) => {
           href="#home"
           className="flex flex-row  items-center gap-2 uppercase text-xl font-bold hover:text-mainYellow"
         >
-          <Image
-            src={logo}
-            alt="my face"
-            width={30}
-          />
+          <Image src={logo} alt="my face" width={30} />
         </a>
       </div>
       <nav className={"hidden lg:flex flex-row"}>
@@ -61,7 +56,11 @@ const Header = ({ isBurgerClicked, burgerToggle }: HeaderProps) => {
             </li>
           ))}
           <li>
-            <a className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center cursor-pointer">
+            <a
+              href="https://documentcloud.wondershare.com/clientShare/review/bpcFVoayn8Msp0rtjRcN4bZD5KS4F1dBOOQ7wDa7hDkEQKBkj-oswlRDJ4cJzJPtGrkUPF9f1HjZlDLEnsWRIQ"
+              target="_blank"
+              className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center cursor-pointer"
+            >
               resume
             </a>
           </li>
@@ -75,19 +74,6 @@ const Header = ({ isBurgerClicked, burgerToggle }: HeaderProps) => {
         <div className="w-8 h-0.5 bg-white"></div>
         <div className="w-8 h-0.5 bg-white"></div>
       </div>
-      {isBurgerClicked && (
-        <nav className="w-full px-4 bg-red text-white">
-          {navLinks.map((link) => (
-            <a
-              href={`/#${link}`}
-              key={link}
-              className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-            >
-              {link}
-            </a>
-          ))}
-        </nav>
-      )}
     </header>
   );
 };

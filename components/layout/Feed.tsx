@@ -18,12 +18,12 @@ const Feed = ({ superpowers }: FeedProps) => {
     >
       <div className="mt-64 flex flex-col justify-center items-center">
         <div>
-          <h1 className="uppercase text-xl lg:text-6xl font-bold ">
+          <h1 className="uppercase text-center text-4xl lg:text-6xl font-bold ">
             Hi, I'm Egor Lagunovich
           </h1>
         </div>
         <div
-          className={`text-xl lg:text-5xl mt-8 whitespace-nowrap font-mono animate-typing cursor-pointer`}
+          className={`text-2xl lg:text-5xl mt-8 whitespace-nowrap font-mono animate-typing cursor-pointer`}
           onClick={resume}
         >
           <span className="text-darkGreen">I am </span>

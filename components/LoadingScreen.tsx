@@ -12,7 +12,7 @@ const LoadingScreen = () => {
     setTimeout(() => setIsNameShown(false), 750);
   }, []);
   return (
-    <div className="text-3xl min-h-screen flex justify-center items-center main-bg">
+    <div className="text-xl lg:text-3xl min-h-screen flex justify-center items-center main-bg">
       <span className={`${!isNameShown && "disappearing"} font-bold`}>
         Egor Lagunovich
       </span>

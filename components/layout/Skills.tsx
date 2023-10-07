@@ -10,11 +10,11 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col justify-center items-center min-h-screen snap-start py-4 px-8 lg:px-32 main-bg"
+      className="flex flex-col justify-center items-center min-h-screen snap-start py-32 px-8 lg:px-32 main-bg"
       // data-aos="fade-up"
     >
       <h2 className="">My Skills</h2>
-      <hr className="border-mainYellow text-center fle w-8 m-4 border-[3px] rounded-full" />
+      <hr className="border-mainYellow text-center w-8 m-4 border-[3px] rounded-full" />
       <div className="text-lg lg:text-xl w-full lg:w-2/3  leading-8 tracking-wider">
         <div className="text-[#CDCFCC]">
           <p>
