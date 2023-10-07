@@ -6,22 +6,22 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col lg:flex-row justify items-center text-3xl gap-11 min-h-screen snap-start py-32 px-8"
-      data-aos="fade-up"
+      className="flex text-textMain flex-col lg:flex-row justify items-center text-3xl gap-11 min-h-screen snap-start py-32 px-8 bg-mainBlue"
+      data-aos="flip-up"
     >
       <div className="w-full lg:w-1/2 rounded-xl">
         <Image src={meImg} alt="my personal photo" width={500} />
       </div>
       <div className="lg:w-1/2 flex justify-center flex-col items-center w-full text-sm lg:text-xl leading-8 tracking-wider">
-        <h2 className="text-center">About Me</h2>
-        <hr className="border-green-300 text-center fle w-7 border-[3px]" />
+        <h2 className="text-center text-white">About Me</h2>
+        <hr className="border-mainYellow text-center fle w-8 m-4 border-[3px] rounded-full" />
         <p>
           My name is Egor Lagunovich. I'm a{" "}
-          <span className="capitalize text-mainYellow">
+          <span className="capitalize text-white">
             front-end software engineer
           </span>{" "}
           and{" "}
-          <span className="capitalize text-mainYellow">
+          <span className="capitalize text-white">
             data science student
           </span>{" "}
           in Warsaw, Poland. I love working on web applications and websites,

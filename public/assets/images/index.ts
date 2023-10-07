@@ -7,3 +7,4 @@ export { default as promptopiaImg } from "./promptopia_final.png";
 export { default as galleryImg } from "./photo_final.png";
 export { default as pizzaImg } from "./pizza_final.png";
 export { default as messangerImg } from "./messanger_final.png";
+export { default as meLogoImg } from "./me_logo.png";

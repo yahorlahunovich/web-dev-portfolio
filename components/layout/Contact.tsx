@@ -10,14 +10,15 @@ const Contact = () => {
     <section
       id="contact"
       className="w-full flex flex-col sm:flex-row justify-center items-center min-h-screen snap-start sm:px-32 main-bg"
-      data-aos="fade-up"
+      data-aos="zoom-in"
     >
       {/* <div className="w-full sm:w-1/2">
         <Image src={contactImg} alt="Mountain" />
       </div> */}
-      <div className="flex flex-col flex-wrap justify-center w-2/3">
-        <h2 className="text-center mb-16">Get in Touch</h2>
-        <p className="text-sm lg:text-xl leading-8 tracking-wider">
+      <div className="flex flex-col flex-wrap items-center justify-center w-2/3">
+        <h2 className="text-center">Get in Touch</h2>
+        <hr className="border-mainYellow text-center fle w-8 m-4 border-[3px] rounded-full" />
+        <p className="text-sm lg:text-xl leading-8 tracking-wider mt-12">
           Have a project in mind or simply want to connect? I'm here to make it
           easy. Whether you have questions, ideas, or opportunities to discuss,
           I'm all ears.

@@ -10,12 +10,14 @@ import {
 import { ProjectsType } from "@/types";
 
 export const superpowers = [
-  "Front-End Developer",
-  "Speedcuber",
-  "Photographer",
-  "Investor",
-  "Sportsman",
-  "Student",
+  "a Front-End Developer",
+  "a React Developer",
+  "a Web Developer",
+  "a TypeScript Developer",
+  "an Investor",
+  "a Data Science Student",
+  "a Speedcuber",
+  "a Sportsman",
 ];
 
 export const social_media_links = [
@@ -44,7 +46,7 @@ export const projects: ProjectsType[] = [
     img: quizImg,
     link: "https://egorlagunovich.github.io/quiz-app/",
     githubLink: "https://github.com/egorlagunovich/quiz-app",
-    bg: "#557EEF",
+    bg: "quiz",
   },
   {
     title: "Pomodoro Timer",
@@ -53,6 +55,7 @@ export const projects: ProjectsType[] = [
     img: pomImg,
     link: "https://egorlagunovich.github.io/productivity-manager/",
     githubLink: "https://github.com/egorlagunovich/productivity-manager",
+    bg: "arancioro",
   },
   {
     title: "Pizza Order App ",
@@ -61,6 +64,7 @@ export const projects: ProjectsType[] = [
     img: pizzaImg,
     link: "https://egorlagunovich.github.io/food-order-app/",
     githubLink: "https://github.com/egorlagunovich/food-order-app",
+    bg: "pizza",
   },
   {
     title: "Photo Gallery",
@@ -69,6 +73,7 @@ export const projects: ProjectsType[] = [
     img: galleryImg,
     link: "https://photo-portfolio-livid-alpha.vercel.app/",
     githubLink: "https://github.com/egorlagunovich/photo-portfolio",
+    bg: "gallery",
   },
   {
     title: "Promptopia",
@@ -77,6 +82,7 @@ export const projects: ProjectsType[] = [
     img: promptopiaImg,
     link: "https://promptopia-teal-beta.vercel.app/",
     githubLink: "https://github.com/egorlagunovich/Promptopia",
+    bg: "promptopia",
   },
 ];
 
@@ -89,5 +95,6 @@ export const allProjects: ProjectsType[] = [
     img: quizImg,
     link: "https://egorlagunovich.github.io/quiz-app/",
     githubLink: "https://github.com/egorlagunovich/quiz-app",
+    bg: "",
   },
 ];

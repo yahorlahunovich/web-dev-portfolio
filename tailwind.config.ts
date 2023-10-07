@@ -9,8 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        mainBlue: "#171B27",
-        mainYellow: "#FFB600",
+        mainBlue: "#1E2749",
+        textMain: '#8892B0',
+        mainYellow: "#FED766",
       },
       // animation: {
       //   // typing: `typing 4s steps(19)`,

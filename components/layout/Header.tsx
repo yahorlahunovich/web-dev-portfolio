@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { meLogoImg } from "@/public/assets/images";
 
 const Header = () => {
   const [animateHeader, setAnimateHeader] = useState(false);
@@ -23,7 +24,7 @@ const Header = () => {
 
   return (
     <header
-      className={`hidden fixed top-0 left-0 z-50 w-full lg:flex flex-row items-center justify-between py-6 px-32 ${
+      className={`text-white hidden fixed top-0 left-0 z-50 w-full lg:flex flex-row items-center justify-between py-6 px-32 ${
         animateHeader
           ? "transition-all border-b-[3px] border-mainWhite bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50 mt-0 duration-500"
           : "mt-8"
@@ -31,10 +32,16 @@ const Header = () => {
     >
       <div>
         <a
-          href="/#home"
-          className="uppercase text-xl font-bold hover:text-mainYellow"
+          href="#home"
+          className="flex flex-row  items-center gap-2 uppercase text-xl font-bold hover:text-mainYellow"
         >
-          Lagunovich
+          {/* <Image
+            src={meLogoImg}
+            alt="my face"
+            width={50}
+            className="rounded-full"
+          /> */}
+          Egor Lagunovich
         </a>
       </div>
       <nav className={"flex flex-row"}>

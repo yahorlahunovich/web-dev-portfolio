@@ -14,18 +14,17 @@ const Feed = ({ superpowers }: FeedProps) => {
   return (
     <section
       id="home"
-      className="h-screen flex flex-col justify-between items-center px-36 pb-12 snap-start gap-8 main-bg "
-      data-aos="fade-up"
+      className="min-h-screen flex flex-col justify-between items-center px-36 pb-12 snap-start gap-8 main-bg"
+      // data-aos="flip-up"
     >
       <div className="mt-64 flex flex-col justify-center items-center">
         <div>
-          {/* <span className="text-3xl"> Hi, my name is</span> */}
-          <h1 className="uppercase text-xl lg:text-6xl font-bold text-white  ">
+          <h1 className="uppercase text-xl lg:text-6xl font-bold ">
             Hi, I'm Egor Lagunovich
           </h1>
         </div>
         <div
-          className={`text-xl lg:text-5xl mt-8 overflow-hidden whitespace-nowrap font-mono animate-typing cursor-pointer`}
+          className={`text-xl lg:text-5xl mt-8 whitespace-nowrap font-mono animate-typing cursor-pointer`}
           onClick={resume}
         >
           <span className="text-darkGreen">I am </span>
@@ -46,7 +45,9 @@ const Feed = ({ superpowers }: FeedProps) => {
         Projects
       </a> */}
       </div>
-      <div className="scroll"></div>
+      <a href="#about">
+        <div className="scroll"></div>
+      </a>
     </section>
   );
 };

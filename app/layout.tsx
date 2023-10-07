@@ -24,13 +24,13 @@ export default function RootLayout({
   }, []);
   return (
     <html lang="en">
-      <body className="bg-mainBlue text-white">
+      <body className="text-white bg-mainBlue">
         {isLoading ? (
           <LoadingScreen />
         ) : (
           <>
             <Navbar />
-            <main className="h-screen duration-300 scroll-smooth">
+            <main className="h-screen duration-300 scroll-smooth ">
               {" "}
               {children}
             </main>
