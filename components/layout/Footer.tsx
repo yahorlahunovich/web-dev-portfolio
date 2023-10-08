@@ -1,19 +1,20 @@
 import { social_media_links } from "@/constants";
 import { arrowUpSvg } from "@/public/assets/icons";
 import Image from "next/image";
+import { Link } from "react-scroll";
 import React from "react";
 
 const Footer = () => {
   return (
     <footer className="flex flex-col gap-10 justify-center items-center font-mono bg-black text-sm text-white py-20 p-4 text-center">
-      <a href="#home">
+      <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>
         <Image
           src={arrowUpSvg}
           width={20}
           className="cursor-pointer hover:-translate-y-1  duration-200"
           alt="arrowUp"
         />
-      </a>
+      </Link>
       <div className="flex flew-row gap-8 justify-center items-center">
         {social_media_links.map((link) => (
           <a

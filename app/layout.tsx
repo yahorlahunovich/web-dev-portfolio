@@ -17,15 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [isLoading, setIsLoading] = useState(true);
-  const [isBurgerClicked, setIsBurgerClicked] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
   }, []);
-  const burgerToggle = (a: boolean) => {
-    setIsBurgerClicked(a);
-  };
   return (
     <html lang="en">
       <body className="text-white bg-mainBlue">
@@ -34,8 +30,6 @@ export default function RootLayout({
         ) : (
           <>
             <Navbar
-              isBurgerClicked={isBurgerClicked}
-              burgerToggle={burgerToggle}
             />
             <main className="h-screen duration-300 snap-y snap-proximity scroll-smooth ">
               {" "}

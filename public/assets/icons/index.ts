@@ -25,6 +25,8 @@ export { default as linkedinSvg } from "./linkedin.svg";
 export { default as pythonSvg } from "./python.svg";
 export { default as logo } from "./logo.png";
 export { default as arrowUpSvg } from "./arrowUp.svg";
+export { default as burgerSvg } from "./Burger.svg";
+export { default as XMarkSvg } from "./XMark.svg";
 
 export const first_half_skillsIcons: SkillsIconsType[] = [
   { name: "html icon", src: htmlSvg, caption: "HTML5" },

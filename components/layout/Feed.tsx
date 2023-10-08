@@ -2,6 +2,7 @@
 
 import { TypePhase, useTypedSuperpower } from "@/hooks/useTypedSuperpower";
 import classNames from "classnames";
+import { Link } from "react-scroll";
 
 type FeedProps = {
   superpowers: string[];
@@ -25,7 +26,7 @@ const Feed = ({ superpowers }: FeedProps) => {
         <div
           className={`text-2xl lg:text-5xl mt-8 whitespace-nowrap font-mono animate-typing cursor-pointer`}
           onClick={resume}
-        >
+        > 
           <span className="text-darkGreen">I am </span>
           <span
             aria-label={selectedSuperpower}
@@ -40,13 +41,10 @@ const Feed = ({ superpowers }: FeedProps) => {
             {typedSuperpower}
           </span>
         </div>
-        {/* <a className=" text-white text-4xl border bg-white-1 rounded" href="#projects">
-        Projects
-      </a> */}
       </div>
-      <a href="#about">
-        <div className="scroll"></div>
-      </a>
+      <Link spy={true} smooth={true} offset={20} duration={500} to="about">
+        <div className="scroll cursor-pointer"></div>
+      </Link>
     </section>
   );
 };
