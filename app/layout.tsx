@@ -37,7 +37,7 @@ export default function RootLayout({
               isBurgerClicked={isBurgerClicked}
               burgerToggle={burgerToggle}
             />
-            <main className="h-screen duration-300 scroll-smooth ">
+            <main className="h-screen duration-300 snap-y snap-proximity scroll-smooth ">
               {" "}
               {children}
             </main>

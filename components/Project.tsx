@@ -25,7 +25,7 @@ const Project = ({ project }: ProjectProps) => {
         <p className="text-lg text-white lg:text-xl leading-8 tracking-wider">
           {desc}
         </p>
-        <h5 className="uppercase text-sm lg:text-xl font-bold">
+        <h5 className="uppercase text-lg lg:text-xl font-bold">
           Development tools:
         </h5>
         {tools.map((tool) => (
@@ -36,20 +36,6 @@ const Project = ({ project }: ProjectProps) => {
         <div className="flex flex-row gap-8">
           <Button link={link} name="View Project" />
           <Button link={githubLink} name="View GitHub" />
-          {/* <a
-            href={link}
-            target="_blank"
-            className="uppercase border px-8 py-3 border-white mr-5"
-          >
-            view Project
-          </a>
-          <a
-            href={githubLink}
-            target="_blank"
-            className="uppercase border px-8 py-3 border-white"
-          >
-            view Github
-          </a> */}
         </div>
       </div>
     </div>

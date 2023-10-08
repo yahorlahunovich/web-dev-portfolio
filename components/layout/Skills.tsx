@@ -71,7 +71,7 @@ const Skills = () => {
               alt={icon.name}
               className="h-[70px] sm:h-[125px] hover:fill-mainYellow"
             />
-            <caption className="text-lg">{icon.caption}</caption>
+            <span className="text-lg">{icon.caption}</span>
           </div>
         ))}
       </div>

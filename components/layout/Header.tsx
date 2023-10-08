@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { Link } from "react-scroll";
 import { logo } from "@/public/assets/icons";
 
 type HeaderProps = {
@@ -36,23 +37,31 @@ const Header = ({ isBurgerClicked, burgerToggle }: HeaderProps) => {
       }`}
     >
       <div>
-        <a
-          href="#home"
-          className="flex flex-row  items-center gap-2 uppercase text-xl font-bold hover:text-mainYellow"
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="cursor-pointer flex flex-row  items-center gap-2 uppercase text-xl font-bold hover:text-mainYellow"
         >
           <Image src={logo} alt="my face" width={30} />
-        </a>
+        </Link>
       </div>
       <nav className={"hidden lg:flex flex-row"}>
         <ul className="flex flex-row gap-5 uppercase">
           {navLinks.map((link) => (
             <li key={link}>
-              <a
-                href={`/#${link}`}
-                className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+              <Link
+                to={`${link}`}
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+                className="relative cursor-pointer w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
               >
                 {link}
-              </a>
+              </Link>
             </li>
           ))}
           <li>

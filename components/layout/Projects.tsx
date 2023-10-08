@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col justify-center items-center snap-start text-4xl py-32 bg-mainBlue"
+      className="flex flex-col justify-center items-center snap-start text-4xl pt-32 bg-mainBlue"
       // data-aos="zoom-in"
     >
       <h2 className="text-center">My Projects</h2>
@@ -21,16 +21,21 @@ const Projects = () => {
           Development. With each pixel, line of code, and user interaction, I
           strive to bring unique ideas to life on the web.
         </p>
-  
+        <p>
+          All my projects can be found on my{" "}
+          <a
+            className="text-mainYellow"
+            href="https://github.com/egorlagunovich?tab=repositories"
+            target="_blank"
+          >
+            Github
+          </a>
+          .
+        </p>
       </div>
       {projects.map((project) => (
         <Project project={project} key={project.title} />
       ))}
-      <Button
-        name="View All Projects"
-        link="https://github.com/egorlagunovich?tab=repositories"
-      />
-      <hr className=" border-[#CDCFCC] w-full m-3" />
     </section>
   );
 };
