@@ -11,7 +11,7 @@ const Project = ({ project }: ProjectProps) => {
   const { title, desc, tools, link, img, bg, githubLink } = project;
   return (
     <div
-      className={`flex flex-col-reverse lg:flex-row min-h-screen w-full text-xl justify-center items-center gap-12 py-8 max-h-60 `}
+      className={`flex flex-col-reverse lg:flex-row min-h-screen w-full text-xl justify-center items-center gap-12 py-8`}
       id={bg}
       // data-aos="fade-up"
     >
