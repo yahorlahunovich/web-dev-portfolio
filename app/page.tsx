@@ -10,20 +10,36 @@ import { superpowers } from "@/constants";
 import Footer from "@/components/layout/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Header from "@/components/layout/Header";
+import LoadingScreen from "@/components/LoadingScreen";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
+  }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
   }, []);
 
   return (
     <>
-      <Feed superpowers={superpowers} />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      {" "}
+      {isLoading ? (
+        <LoadingScreen />
+      ) : (
+        <>
+          <Header />
+          <Feed superpowers={superpowers} />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </>
   );
 }
