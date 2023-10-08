@@ -11,7 +11,7 @@ const Project = ({ project }: ProjectProps) => {
   const { title, desc, tools, link, img, bg, githubLink } = project;
   return (
     <div
-      className={`flex flex-col-reverse lg:flex-row min-h-screen w-full text-xl justify-center items-center gap-12 py-5 `}
+      className={`flex flex-col-reverse lg:flex-row min-h-screen w-full text-xl justify-center items-center gap-12 py-8 max-h-60 `}
       id={bg}
       // data-aos="fade-up"
     >
@@ -25,15 +25,17 @@ const Project = ({ project }: ProjectProps) => {
         <p className="text-lg text-white lg:text-xl leading-8 tracking-wider">
           {desc}
         </p>
-        <h5 className="uppercase text-lg lg:text-xl font-bold">
-          Development tools:
-        </h5>
-        {tools.map((tool) => (
-          <ul className="flex flex-col px-6 list-disc" key={tool}>
-            <li>{tool}</li>
-          </ul>
-        ))}
-        <div className="flex flex-row gap-8">
+        <div>
+          <h5 className="uppercase text-lg lg:text-xl font-bold">
+            Development tools:
+          </h5>
+          {tools.map((tool) => (
+            <ul className="flex flex-col px-6 list-disc" key={tool}>
+              <li>{tool}</li>
+            </ul>
+          ))}
+        </div>
+        <div className="flex justify-center items-center flex-row gap-8">
           <Button link={link} name="View Project" />
           <Button link={githubLink} name="View GitHub" />
         </div>

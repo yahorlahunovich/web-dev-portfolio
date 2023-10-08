@@ -41,7 +41,7 @@ export const social_media_links = [
 export const projects: ProjectsType[] = [
   {
     title: "Quiz App",
-    desc: "Discover and test your knowledge on diverse topics with Quiz App! I created this site for personal development and gaining new knowledge.",
+    desc: "Discover and test your knowledge on diverse topics with Quiz App! I created this site for personal development and gaining new knowledge. This app is connected to a database with a huge number of questions on various topics. ",
     tools: ["React", "Redux", "CSS Modules"],
     img: quizImg,
     link: "https://egorlagunovich.github.io/quiz-app/",
@@ -59,7 +59,7 @@ export const projects: ProjectsType[] = [
   },
   {
     title: "Pizza Order App ",
-    desc: "This is an online shop for ordering pizza.(e-commerce) I created this project while taking a react course on the Udemy website.",
+    desc: "This is an online shop for ordering pizza(e-commerce). All orders and data are connected to the database.  I created this project while taking a react course on the Udemy website.",
     tools: ["React", "Firebase", "CSS Modules"],
     img: pizzaImg,
     link: "https://egorlagunovich.github.io/food-order-app/",
@@ -68,7 +68,7 @@ export const projects: ProjectsType[] = [
   },
   {
     title: "Photo Gallery",
-    desc: "I created this website as a gallery of photos taken by me.",
+    desc: "I created this website as a gallery of photos taken by me. The goal of this project was to create a beautiful website and practice working with photographs on websites.",
     tools: ["React", "TypeScript", "Tailwind"],
     img: galleryImg,
     link: "https://photo-portfolio-livid-alpha.vercel.app/",
@@ -77,7 +77,7 @@ export const projects: ProjectsType[] = [
   },
   {
     title: "Promptopia",
-    desc: "Promptopia is an open-source AI prompting tool for modern world to discover, create and share creative prompts. I cerated this project watching a Next.js course on YouTube.",
+    desc: "Promptopia is an open-source AI prompting tool for the modern world to discover, create and share creative prompts. This project was made in order to hone my skills in working with the Next framework, connecting tp MongoDB, and learning how to write a backend.",
     tools: ["Next", "MongoDB", "Tailwind"],
     img: promptopiaImg,
     link: "https://promptopia-teal-beta.vercel.app/",
